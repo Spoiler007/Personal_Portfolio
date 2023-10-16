@@ -1,0 +1,134 @@
+#projects h2{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+ margin-top: 40px;
+    font-size: 2.5rem;
+}
+#projects h2 span{
+    color: var(--danger-color);
+
+}
+#projects hr{
+    
+    margin: auto;
+    width: 200px;
+    margin-bottom: 50px;
+    border: 1px solid #000;
+}
+
+.projects_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2.5rem;
+   
+    justify-content: center;
+}
+.projects_item{
+    box-shadow: 8px -8px 4px -3px rgb(74, 71, 71), 0px 5px 3px -4px black;
+    background: rgb(89, 89, 102);
+    padding: 1.2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    gap: 10px;
+    margin: auto;
+}
+.projects_item h3{
+    color: #fff;
+    margin: 1.2rem 0 2rem;
+    padding: 10px 5px;
+    max-width: 200px;
+    margin: auto;
+    
+}
+.projects_item-cta a{
+    border: 2px solid rgb(53, 181, 235);
+    color: #fff;
+    padding: 8px 20px;
+    margin-left: 1rem;
+    border-radius: 5px;
+    
+}
+.projects_item a:hover{
+    box-shadow:1px 1px 30px 1px rgb(53, 181, 235) ;
+}
+
+.projects_item-image img{
+    height: 220px;
+    width: 270px;
+    border-radius: 15px;
+    transition: transform 0.2s;
+}
+.projects_item-image img:hover{
+    transform: scale(1.05);
+    box-shadow:1px 1px 10px 1px rgb(53, 181, 235) ;
+
+}
+
+/* .portfolio_item-cta{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+} */
+
+@media screen and (max-width:1024px) {
+ .projects_container{
+ grid-template-columns: 1fr 1fr; 
+ gap: 1.2rem;
+
+}  
+    
+}
+@media screen and (max-width:850px){
+    .projects_container{
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        
+    }
+}
+
+@media screen and (max-width:600px) {
+    .projects_container{
+        grid-template-columns:1fr; 
+        gap: 1.2rem;
+       
+       }  
+    
+       
+}
+@media screen and (max-width:400px) {
+    .projects_item-image img{
+        height: 120px;
+        width: 170px;
+        
+    }
+    #projects h2{
+        font-size: 25px;
+    }
+    .projects_item{
+        width: 210px;
+        height: 330px;
+    }
+    .projects_item a{
+        padding: 5px 10px;
+        font-size: 12px;
+        text-align: center;
+    }
+    .projects_item h3{
+        font-size: 15px;
+        margin: 0.2rem 0 0.2rem;
+    }
+    .projects_item-cta{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    #projects hr{
+        width: 100px;
+    }
+}
+
+/* max400, min300 */
+

@@ -1,0 +1,123 @@
+#contact h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 30px;
+
+}
+#contact span{
+    color: var(--danger-color);
+    margin-right:5px ;
+}
+#contact hr{
+    
+        width: 200px;
+        
+        margin: 0px auto 50px;
+        border: 1px solid #000;
+    }
+
+.contact_container{
+    margin: auto;
+    display: grid;
+    width: 80%;
+    grid-template-columns: 30% 58%;
+    gap: 75px;
+   
+}
+.contact_options{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin: auto;
+    align-items: center;
+    /* margin-left: 70px; */
+}
+.contact_option{
+    background: rgb(77, 65, 65);
+    padding: 1.5rem 1.5rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    width: fit-content;
+    border: 1px solid transparent;
+    color: #fff;
+    /* max-width: 300px; */
+    /* margin: auto; */
+}
+.contact_option:hover{
+    border: none;
+    /* background: rgb(121, 117, 117); */
+    box-shadow:1px 1px 30px 1px rgb(124, 128, 130) ;
+    background: linear-gradient(-20deg,rgb(62, 58, 58),rgb(162, 155, 155),rgb(62, 58, 58)) ;
+    border-color: var(--color-bg-varient);
+    /* color: blueviolet; */
+}
+.contact_option a{
+    color: #2adce2;
+    font-weight: 700;
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 1rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+ margin-top: 60px;
+}
+form input,textarea::placeholder{
+    font-size: 15px;
+    
+}
+input,textarea{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid goldenrod;
+    resize: none;
+    
+}
+
+.btn{
+    width: 150px;
+    border: 2px solid rgb(39, 197, 194);
+    padding: 10px 2px;
+    color:#fff;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 5px;
+    background: #546f84;
+    cursor:pointer;
+}
+
+@media screen and (max-width:1024px) {
+    .contact_container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin: auto;
+    }
+   
+}
+@media screen and (max-width:768px){
+    .contact_container{
+        width: 70%;
+        
+    }
+    .contact_options{
+        margin: auto ;
+        width: 70%;
+    }
+
+}
+@media screen and (max-width:400px){
+form{
+    margin-right:15px;
+}
+}
+@media screen and (max-width:300px){
+    #contact h2{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,58 @@
+#testimonial h2{
+    color: var(--danger-color);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    /* padding: 3.5rem 0px; */
+    font-size: 2.6rem;
+}
+#testimonial hr{
+    margin: auto;
+    width: 150px;
+    margin-bottom: 50px;
+    border: 1px solid #000;
+}
+.testimonial{
+    margin-bottom: 35px;
+    
+    
+}
+
+.client_avtar  img{
+    width: 50px;
+    border: 0.1rem solid rgb(84, 194, 200);
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.quote{
+    color: var(--danger-color);
+    /* float: right; */
+    font-size: 20px;
+    /* margin-top: 20px; */
+}
+.client_avtar {
+    width: 70%;
+    /* aspect-ratio: 1/1; */
+    overflow: hidden;
+   border: 2px solid rgb(9, 143, 177);
+    border-radius:1rem ;
+    margin:0 auto 1rem;
+    padding: 7px 4px;
+   
+}
+.client_avtar h5{
+    margin-left: 40px;
+
+}
+.client_review p{
+    /* margin-left: 50%; */
+    padding:20px 20px;
+
+}
+@media screen and (max-width:300px){
+    #testimonial h2{
+        font-size: 25px;
+    }
+}

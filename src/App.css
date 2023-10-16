@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Josefin+Sans:wght@400;500;600;700&family=Monoton&family=Nunito:wght@400;500;600;700&family=Open+Sans:ital,wght@1,300&family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto&family=Rubik+80s+Fade&family=Rubik+Iso&family=Silkscreen&display=swap');
+
+
+:root{
+  --bg-dark:#0f141e;
+  --bg-light:#f9f9f9;
+  --dark-color:rgba(15,20,30,0.8);
+  --danger-color:#ab1111;
+  --color-bg:#1f1f38;
+  --color-bg-varient:#2c2c6c;
+  --color-primary:#4db5ff;
+  --color-primary-varient:rgba(77,181,255,0.4);
+  --color-white:#fff;
+  --color-light:rgba(255,255,255,0.6);
+  --container-width-lg:75%;
+  --container-width-md:86%;
+  --container-width-ms:90%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+::before,
+::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: "Josefin Sans",sans-serif;
+  /* color: #000; */
+  color: #000;
+  font-size: 16px;
+  line-height: 1.5;
+  
+  /* background-color: #0d4d7c; */
+}
+.container{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  padding: 0 20px;
+}
+.container1{
+  width: var(--container-width-lg);
+  margin: 0 auto;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar{
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+
+ul{
+  list-style-type:none ;
+}
+a{
+  text-decoration: none;
+  color: #000;
+
+}
+
+p{
+  margin: 10px 0;
+  font-weight: 500;
+
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: "Josefin Sans",sans-serif;
+}
+.reveal{
+  transform: translateY(200px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.show{
+  transform: translateY(0px);
+  opacity: 1;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 40px;
+  height: 100%;
+  padding: 40px 0;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.active{
+  color: var(--danger-color) !important;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+}
+.scroll-top{
+  position: sticky;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+@media screen and (max-width:768px) {
+  body{
+    text-align: justify;
+
   }
-  to {
-    transform: rotate(360deg);
+  .grid{
+    grid-template-columns: 1fr;
   }
+  
 }
