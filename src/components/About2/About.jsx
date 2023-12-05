@@ -32,7 +32,7 @@ const About = () => {
 
 
                 <div className='about-content' data-aos="fade-up">
-                    <h3 className="border" data-aos="flip-left">Hi There!</h3>
+                    <h3 className="border" data-aos="flip-left">Hi There !</h3>
                     <p>
                         I'm <span className="name"> Ujjwal</span>. A Web developer, and I'm very passoniate and dedicated to my work. I have acquired the skills and knowledge necessary to make your projects a success. I enjoy every step of the design process, from discussion and collaboration.
                     </p>

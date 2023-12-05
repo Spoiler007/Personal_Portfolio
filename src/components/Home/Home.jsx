@@ -3,7 +3,7 @@ import styles from './Home.module.css'
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import {FaDownload} from 'react-icons/fa'
 
-const PDF_FILE_URL = 'http://localhost:3000/Ujjwal_Ghosh_resume.pdf'
+const PDF_FILE_URL = 'http://localhost:3000/Ujjwal_Resume3.pdf'
 const Home = () => {
     const items = ['UI Designer', 'Frontend Developer'];
     const [currentIndex, setCurrentIndex] = useState(0);
